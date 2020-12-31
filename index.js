@@ -90,6 +90,6 @@ app.delete("/user/:id", async (req, res) => {
   }
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server is Running in Port 3000");
 });
